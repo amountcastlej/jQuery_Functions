@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Functions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+</head>
+<body>
+        <button id='return'>Pikachu return!</button>
+        <img id='pika' src="images/pickaCat.jpg" alt="pikachu_cat">
+        <button id='go'>Go Bulbasaur! </button>
+        <img id='bulbaSaur' src="images/bulba.jpg" alt="bulbasaur_cat">
+        <hr>
+        <img id='whereWaldo' src="images/Waldo.jpg" alt="waldo">
+        <button id="whereyaAt">Where's Waldo?</button>
+        <hr>
+        <div>
+        <img id="hoop" src="images/hoop.jpg" alt="basketball_hoop">
+        <img id='kobe' src="images/kobeDunk.png" alt="kobeDunk">
+        </div>
+        <hr>
+        <img id='beam' src="images/alienShip.jpg" alt="alien_spaceship">
+        <div id="trumpLava">
+        <img id="trump" src="images/Trump.jpg" alt="donald_trump">
+        </div> 
+        <hr>
+        <img id="gokufinisher" src="images/gokuMove.jpg" alt="gokukamehameha">
+        <img id="enemies" src="images/freezaCell.jpg" alt="freeza_Cell"> 
+        <hr>
+        <p id="theme">na na na na na na na na na na na na na na na na:</p>
+        <hr>
+        <h2 id="see">Peekaboo!</h2>
+        <hr>
+        <h2 id="song">from the other side</h2>
+        <hr>
+        <p class="lyric">I am</p>
+        <p class="lyric">Blue</p>
+        <p>dabadeedabadiedabadeedabadie</p>
+        <hr>
+        <p>Whatcha Doing?!</p>
+        <p id="activity"></p>
+        <hr>
+        <p>Once upon a time lived a <em id="adjectives" adj="smelly, dirty"> Cat </em>who roamed the streets of LA</p>
+        The best adjective to describe the cat is:<div id="terms"></div>
+        <hr>
+        <div>
+            <button class="slogan">EAT</button>
+            <button class="slogan">MORE</button>
+            <button class="slogan">CHICKEN</button>
+        </div>
+        <input type="text" value="click a button">
+        <hr>
+        <p>I like to eat, eat, eat</p>
+        <p id="fruit">What do you like to eat?</p>
+
+</body>
+<script>
+    $('#return').click(function(){
+        $('#pika').slideUp();
+    })
+    $('#bulbaSaur').hide();
+    $('#go').click(function(){
+        $('#bulbaSaur').slideDown();
+    })
+    $('#whereWaldo').hide();
+    $('#whereyaAt').click(function(){
+        $('#whereWaldo').slideToggle();
+    })
+    $('#kobe').hide();
+    $("#hoop").click(function(){
+        $('#kobe').fadeIn();
+    });
+    $('#beam').hover(function() {
+        $("#trump").slideUp( "slow", function(){
+        });
+    });
+    $('#gokufinisher').hover(function(){
+        $('#enemies').fadeOut();
+    })
+    $('#theme').append("<strong>BATMAN!!!</strong>");
+    $('#see').after("<i>I see you!!</i>")
+    $('#song').before("<b>HELLO<b>");
+    $(".lyric").last().addClass(["selected", "back"]);
+    $("#activity").html("Nothin, chillin at the <span>Holiday INN</span>")
+    var adj = $("#adjectives").attr("adj");
+    $("#terms").text(adj);
+    $(".slogan").click(function(){
+        var text = $(this).text();
+        $( "input").val(text);
+    })
+    $("#fruit").text("<b>apples and bananas</a>")
+</script>
+</html>
