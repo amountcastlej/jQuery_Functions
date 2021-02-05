@@ -1,0 +1,119 @@
+
+#pika {
+    border-radius: 50px;
+    border: 5px solid yellow;
+}
+#return {
+    vertical-align: top;
+    margin-top: 135px;
+    margin-left: 10px;
+    margin-right: 15px;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+}
+#go {
+    vertical-align: top;
+    margin-top: 135px;
+    margin-left: 10px;
+    margin-right: 15px;
+    background-color:rgb(96, 218, 72);
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#bulbaSaur {
+    height: 420px;
+    border-radius: 350px;
+    border: 5px solid rgb(96, 218, 72);
+}
+
+#whereWaldo {
+    height: 450px;
+    margin: 50px;
+}
+
+#whereyaAt {
+    vertical-align: top;
+    margin-top: 135px;
+    border-radius: 7px;
+    background-color: lightblue;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#hoop {
+    height: 350px;
+    vertical-align: top;
+    margin-top: 30px;
+    border-radius: 125px;
+}
+
+#kobe {
+    width: 550px;
+    border-radius: 350px;
+}
+
+#beam {
+    width: 350px;
+    margin-left: 700px;
+}
+
+#trump {
+    width: 350px;
+    margin-left: 700px;
+}
+
+#gokufinisher {
+    margin-top: 50px;
+}
+#enemies {
+    width: 500px;
+    vertical-align: top;
+}
+#theme {
+    background-color: yellow;
+}
+
+.selected {
+    font-weight: bold;
+    color: lightblue;
+}
+.back {
+    background-color: blue;
+}
+span{
+    color: gold;
+    background-color: red;
+    font-weight: bold;
+}
+#adjectives{
+    color: orange;
+    font-weight: bold;
+}
+#terms {
+    color: darkgreen;
+    font-size: 18px;
+}
+
+.slogan {
+    margin: 4px;
+    cursor: pointer;
+}
+Input{
+    margin: 4px;
+    color: red;
+    font-weight: bold;
+}
+#fruit {
+    color:rgb(96, 218, 72);
+    background-color: yellow
+}
